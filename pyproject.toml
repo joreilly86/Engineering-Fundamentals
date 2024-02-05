@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "python 3-9"
+version = "0.1.0"
+description = "Downgrading for use with certain packages"
+authors = ["joreilly86 <44675992+joreilly86@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "python 3"}]
+
+[tool.poetry.dependencies]
+python = "3.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
