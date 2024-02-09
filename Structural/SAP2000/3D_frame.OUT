@@ -1,0 +1,24 @@
+
+
+ SAP2000 v25.0.0 Ultimate 64-bit (Analysis Build 9939/64)                       
+ File: C:\Users\jorei\Document...ng Fundamentals\Structural\SAP2000\3D_frame.OUT
+                                                                     
+                                                                       
+
+ D I S P L A C E M E N T   D E G R E E S   O F   F R E E D O M
+
+         (A) = Active DOF, equilibrium equation
+         (-) = Restrained DOF, reaction computed
+         (+) = Constrained DOF
+         (>) = External substructure DOF
+         ( ) = Null DOF
+
+  JOINTS              UX  UY  UZ  RX  RY  RZ
+       1               -   -   -   A   A   A
+       2               A   A   A   A   A   A
+       3               -   -   -   A   A   A
+       4               A   A   A   A   A   A
+       5               -   -   -   A   A   A
+       6               A   A   A   A   A   A
+       7               -   -   -   A   A   A
+       8               A   A   A   A   A   A
