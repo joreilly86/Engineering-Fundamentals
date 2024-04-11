@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pandas 101"
+version = "0.1.0"
+description = "Basic pandas examples to support the flocode newsletter - '#027 - Data Structures for Civil/Structural Engineers: Pandas 101'"
+authors = ["James O'Reilly <joreilly86@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.2.2"
+matplotlib = "^3.8.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
