@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "structural examples"
+version = "0.1.0"
+description = "Basic Examples showing Python use cases in Structural Engineering"
+authors = ["James O'Reilly <joreilly86@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+matplotlib = "^3.8.3"
+pandas = "^2.2.1"
+numpy = "^1.26.4"
+PyNiteFEA = "^0.0.91"
+seaborn = "^0.13.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
