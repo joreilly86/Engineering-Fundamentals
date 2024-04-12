@@ -1,4 +1,4 @@
-# Python for Engineering Examples
+# 🐍 Python for Engineering Examples
 
 Welcome to the official repository for Python scripts and examples supporting the Flocode Engineering Insights newsletter available at [flocode.substack.com](https://flocode.substack.com). This repository contains a collection of Python examples across various engineering disciplines such as structural, civil, hydraulic, geotechnical, and mechanical engineering. Each folder in this repository corresponds to specific disciplines and contains relevant Python scripts that demonstrate practical applications in each field.
 
