@@ -1,10 +1,13 @@
 # #027 - Data Structures for Civil/Structural Engineers: Pandas 101
 
-# Python for Engineering Examples
+# 🐍 Python for Engineering Examples
 
 This repository contains Python scripts that demonstrate the power of pandas for handling and analyzing engineering data. These examples are part of the Flocode Engineering Insights newsletter and serve as practical tutorials for applying Python in various engineering contexts.
 
 ## Overview of Examples
+
+### Case Study 1: Structural Health Monitoring
+This example is narrative and included in the newsletter. No code for this one. This example will be covered in [flocodes courses](flocode.dev/courses)
 
 ### Case Study 2: Analyzing Flow Data
 This script utilizes pandas to import, process, and analyze river flow data from a CSV file. Key operations include:
@@ -16,6 +19,9 @@ This script utilizes pandas to import, process, and analyze river flow data from
 - **Data Resampling**: Converts the data frequency from hourly to daily mean values.
 - **Missing Data Handling**: Identifies and removes rows with missing data.
 - **Data Export**: Writes the cleaned data back to a CSV file.
+
+### Case Study 3: Construction Project Management
+This example is narrative and included in the newsletter. No code for this one. This example will be covered in [flocodes courses](flocode.dev/courses).
 
 ### Case Study 4: Analyzing AISC Steel Beam Data with Pandas
 This script demonstrates how to select an optimal W-shape steel beam from an Excel database that can support a specified load under given constraints using pandas. Key functionalities include:
@@ -32,9 +38,9 @@ This script demonstrates how to select an optimal W-shape steel beam from an Exc
 
 Flocode welcomes contributions! Please feel free to contribute by submitting issues and pull requests to the project repository.
 
-For all things Python for civil and structural engineering, come visit [flocode.dev](flocode.dev)
+For all things Python for civil and structural engineering, come visit [flocode.dev](flocode.dev) 🌊
 
-[![Visit flocode.dev](https://img.shields.io/badge/Visit-flocode.dev-blue?style=for-the-badge&logo=appveyor)](https://flocode.dev)
+[![Visit flocode.dev](https://img.shields.io/badge/Visit-flocode.dev-blue?style=for-the-badge&logo=appveyor)](https://flocode.dev).
 
 ## Licence
 
