@@ -7,7 +7,7 @@ This repository contains Python scripts that demonstrate the power of pandas for
 ## Overview of Examples
 
 ### Case Study 1: Structural Health Monitoring
-This example is narrative and included in the newsletter. No code for this one. This example will be covered in [flocodes courses](flocode.dev/courses)
+This example is narrative and included in the newsletter. No code for this one. This example will be covered in [flocodes courses](flocode.dev/courses).
 
 ### Case Study 2: Analyzing Flow Data
 This script utilizes pandas to import, process, and analyze river flow data from a CSV file. Key operations include:
