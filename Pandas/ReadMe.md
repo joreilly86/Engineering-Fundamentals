@@ -1,4 +1,4 @@
-# #027 - Data Structures for Civil/Structural Engineers: Pandas 101
+[# #027 - Data Structures for Civil/Structural Engineers: Pandas 101](https://open.substack.com/pub/flocode/p/027-data-structures-for-civilstructural?r=tbs50&utm_campaign=post&utm_medium=web)
 
 # 🐍 Python for Engineering Examples
 
