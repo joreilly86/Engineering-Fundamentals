@@ -1,8 +1,10 @@
-[# #027 - Data Structures for Civil/Structural Engineers: Pandas 101](https://open.substack.com/pub/flocode/p/027-data-structures-for-civilstructural?r=tbs50&utm_campaign=post&utm_medium=web)
+# [#027 - Data Structures for Civil/Structural Engineers: Pandas 101](https://open.substack.com/pub/flocode/p/027-data-structures-for-civilstructural?r=tbs50&utm_campaign=post&utm_medium=web)
 
 # 🐍 Python for Engineering Examples
 
-This repository contains Python scripts that demonstrate the power of pandas for handling and analyzing engineering data. These examples are part of the [Flocode Engineering Insights newsletter](flocode.substack.com) and serve as practical tutorials for applying Python in various engineering contexts.
+This repository contains Python scripts that demonstrate the power of pandas for handling and analyzing engineering data. 
+
+These examples are discussed in detail in the Flocode Newsletter article - [#027 - Data Structures for Civil/Structural Engineers: Pandas 101](https://open.substack.com/pub/flocode/p/027-data-structures-for-civilstructural?r=tbs50&utm_campaign=post&utm_medium=web) and serve as practical tutorials for applying Python in various engineering contexts.
 
 ## Overview of Examples
 
