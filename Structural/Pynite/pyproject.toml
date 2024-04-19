@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pynite examples"
+version = "0.1.0"
+description = ""
+authors = ["joreilly86 <joreilly86@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+PyNiteFEA = "^0.0.93"
+ipython = "^8.23.0"
+vtk = "^9.3.0"
+scipy = "^1.13.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
