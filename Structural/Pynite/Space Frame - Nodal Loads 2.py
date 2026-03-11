@@ -3,22 +3,22 @@
 # Problem 5.58
 # Units for this model are kips and inches
 
-# Import 'FEModel3D' and 'Visualization' from 'PyNite'
-from PyNite import FEModel3D
-from PyNite import Visualization
+# Import 'FEModel3D' and 'Visualization' from 'Pynite'
+from Pynite import FEModel3D
+from Pynite import Visualization
 
 # Create a new model
 frame = FEModel3D()
 
 # Define the nodes
-frame.add_node('N1', 0, 0, 0)
-frame.add_node('N2', 10*12, 0, 0)
-frame.add_node('N3', 10*12, 0, -10*12)
-frame.add_node('N4', 10*12, -20*12, -10*12)
+frame.add_node("N1", 0, 0, 0)
+frame.add_node("N2", 10 * 12, 0, 0)
+frame.add_node("N3", 10 * 12, 0, -10 * 12)
+frame.add_node("N4", 10 * 12, -20 * 12, -10 * 12)
 
 # Define the supports
-frame.def_support('N1', True, True, True, True, True, True)
-frame.def_support('N4', True, True, True, True, True, True)
+frame.def_support("N1", True, True, True, True, True, True)
+frame.def_support("N4", True, True, True, True, True, True)
 
 # Create members (all members will have the same properties in this example)
 J = 100
@@ -31,22 +31,30 @@ E = 30000
 G = 10000
 nu = 0.3
 rho = 2.836e-4
-frame.add_material('Steel', E, G, nu, rho)
+frame.add_material("Steel", E, G, nu, rho)
 
-frame.add_member('M12', 'N1', 'N2', 'Steel', Iy, Iz, J, A)
-frame.add_member('M23', 'N2', 'N3', 'Steel', Iy, Iz, J, A)
-frame.add_member('M34', 'N3', 'N4', 'Steel', Iy, Iz, J, A)
+frame.add_section("M12Section", A, Iy, Iz, J)
+frame.add_member("M12", "N1", "N2", "Steel", "M12Section")
+frame.add_section("M23Section", A, Iy, Iz, J)
+frame.add_member("M23", "N2", "N3", "Steel", "M23Section")
+frame.add_section("M34Section", A, Iy, Iz, J)
+frame.add_member("M34", "N3", "N4", "Steel", "M34Section")
 
 # Add nodal loads
-frame.add_node_load('N2', 'FY', -5)
-frame.add_node_load('N2', 'MX', -100*12)
-frame.add_node_load('N3', 'FZ', 40)
+frame.add_node_load("N2", "FY", -5)
+frame.add_node_load("N2", "MX", -100 * 12)
+frame.add_node_load("N3", "FZ", 40)
 
 # Analyze the frame
 frame.analyze()
 
-print('Calculated results: ', frame.Nodes['N2'].DY, frame.Nodes['N3'].DZ)
-print('Expected results: ', -0.063, 1.825)
+print("Calculated results: ", frame.nodes["N2"].DY, frame.nodes["N3"].DZ)
+print("Expected results: ", -0.063, 1.825)
 
 # Render the model for viewing
-Visualization.render_model(frame, annotation_size=5, deformed_shape=True, deformed_scale=40, render_loads=True)
+rndr = Visualization.Renderer(frame)
+rndr.annotation_size = 5
+rndr.deformed_shape = True
+rndr.deformed_scale = 40
+rndr.render_loads = True
+rndr.render_model()

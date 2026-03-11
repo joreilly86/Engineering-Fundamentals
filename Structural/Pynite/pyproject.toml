@@ -1,19 +1,23 @@
-[tool.poetry]
-name = "pynite examples"
+[project]
+name = "pynite-examples"
 version = "0.1.0"
 description = ""
-authors = ["joreilly86 <joreilly86@gmail.com>"]
-license = "MIT"
+authors = [{name = "joreilly86", email = "joreilly86@gmail.com"}]
+license = {text = "MIT"}
 readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "PyNiteFEA>=2.4.1",
+    "ipython>=8.31.0",
+    "vtk>=9.4.0",
+    "scipy>=1.15.0"
+]
 
-[tool.poetry.dependencies]
-python = "^3.11"
-PyNiteFEA = "^0.0.93"
-ipython = "^8.23.0"
-vtk = "^9.3.0"
-scipy = "^1.13.0"
-
+[dependency-groups]
+dev = [
+    "ruff>=0.15.5",
+]
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
